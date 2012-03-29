@@ -7,10 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "ContentController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize contentController;
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application{
+    
+    NSString *nibTitle = @"PadContent";
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+	{
+		nibTitle = @"PhoneContent";
+    }
+    [[NSBundle mainBundle] loadNibNamed:nibTitle owner:self options:nil];
+    
+    [self.window addSubview:self.contentController.view];
+	[_window makeKeyAndVisible];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

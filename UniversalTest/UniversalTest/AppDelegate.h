@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class ContentController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, retain) ContentController *contentController;
 @end

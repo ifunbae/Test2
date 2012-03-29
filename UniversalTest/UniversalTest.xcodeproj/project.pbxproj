@@ -21,6 +21,7 @@
 		6FDDC7D5152414A400BA3D79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDDC7B3152414A300BA3D79 /* Foundation.framework */; };
 		6FDDC7DD152414A400BA3D79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FDDC7DB152414A400BA3D79 /* InfoPlist.strings */; };
 		6FDDC7E0152414A400BA3D79 /* UniversalTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDDC7DF152414A400BA3D79 /* UniversalTestTests.m */; };
+		6FEF1C5E15241F3500401E39 /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF1C5D15241F3500401E39 /* ContentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6FDDC7DC152414A400BA3D79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FDDC7DE152414A400BA3D79 /* UniversalTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversalTestTests.h; sourceTree = "<group>"; };
 		6FDDC7DF152414A400BA3D79 /* UniversalTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversalTestTests.m; sourceTree = "<group>"; };
+		6FEF1C5C15241F3500401E39 /* ContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentController.h; sourceTree = "<group>"; };
+		6FEF1C5D15241F3500401E39 /* ContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 		6FDDC7B7152414A300BA3D79 /* UniversalTest */ = {
 			isa = PBXGroup;
 			children = (
+				6FDDC7F0152417B800BA3D79 /* iPad */,
+				6FDDC7EF152417A600BA3D79 /* iPhone */,
 				6FDDC7C0152414A300BA3D79 /* AppDelegate.h */,
 				6FDDC7C1152414A300BA3D79 /* AppDelegate.m */,
 				6FDDC7C3152414A300BA3D79 /* MainStoryboard_iPhone.storyboard */,
@@ -120,6 +125,8 @@
 				6FDDC7C9152414A300BA3D79 /* ViewController.h */,
 				6FDDC7CA152414A300BA3D79 /* ViewController.m */,
 				6FDDC7B8152414A300BA3D79 /* Supporting Files */,
+				6FEF1C5C15241F3500401E39 /* ContentController.h */,
+				6FEF1C5D15241F3500401E39 /* ContentController.m */,
 			);
 			path = UniversalTest;
 			sourceTree = "<group>";
@@ -152,6 +159,20 @@
 				6FDDC7DB152414A400BA3D79 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FDDC7EF152417A600BA3D79 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		6FDDC7F0152417B800BA3D79 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +286,7 @@
 				6FDDC7BE152414A300BA3D79 /* main.m in Sources */,
 				6FDDC7C2152414A300BA3D79 /* AppDelegate.m in Sources */,
 				6FDDC7CB152414A300BA3D79 /* ViewController.m in Sources */,
+				6FEF1C5E15241F3500401E39 /* ContentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +466,7 @@
 				6FDDC7E5152414A400BA3D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FDDC7E6152414A400BA3D79 /* Build configuration list for PBXNativeTarget "UniversalTestTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +475,7 @@
 				6FDDC7E8152414A400BA3D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
